@@ -5,7 +5,7 @@ const Auth = () => {
         <>
         <div className="h-screen max-w-md flex flex-col align-center justify-center">
         <div className="bg-[#121212] h-[465px] w-full bg-cover"></div>
-           <div className="bg-[#121212] w-full h-[449px] flex flex-col items-center gap-5 justify-center"> 
+           <div className="bg-[#121212] w-full h-[449px] flex flex-col items-center pb-20 gap-5 justify-center"> 
            <div className="flex flex-col text-white items-center">
                 <img className="w-12 h-12" src="/logoAuth.png" alt="" />
                 <p className="text-2xl font-bold">Millions of Songs. Free on Spotify.</p>
