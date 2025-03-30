@@ -23,7 +23,7 @@ const Header = () => {
           </Label>
         </div>
         <div className="flex items-center gap-2">
-          <Button className="cursor-pointer">Узнать больше о Premium</Button>
+          <Button className="cursor-pointer md:flex lg:flex hidden">Узнать больше о Premium</Button>
           <Button className="hidden lg:cursor-pointer lg:flex">
             <IoMdDownload color="white" className="w-7 h-7" /> Установить приложение
           </Button>
