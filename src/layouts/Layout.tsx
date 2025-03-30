@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/custom/Header";
-import Footer from "../components/custom/Footer";
+import Player from "../components/custom/Player";
 
 const Layout = () => {
     return (
@@ -8,7 +8,7 @@ const Layout = () => {
         <div>
             <Header />
             <Outlet />
-            <Footer />
+            <Player />
         </div>
         </>
     );
