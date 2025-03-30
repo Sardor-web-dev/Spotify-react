@@ -5,7 +5,6 @@ import { FaPauseCircle } from "react-icons/fa";
 import { BiDislike } from "react-icons/bi";
 import { MdDevices } from "react-icons/md";
 import { Progress } from "../ui/progress";
-import { SidebarProvider, SidebarTrigger } from "../ui/sidebar";
 
 const Player = () => {
   return (
