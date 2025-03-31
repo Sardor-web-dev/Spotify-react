@@ -10,18 +10,18 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 const Header = () => {
   return (
     <>
-      <div className="flex bg-[#121212] h-20 justify-between p-5 items-center">
+      <div className="flex bg-[#121212] h-20 justify-between p-5 w-full items-center">
         <div className="flex gap-4 items-center">
           <img className="w-11 h-11 cursor-pointer" src="/logoAuth.png" alt="logo" />
           <div className="hidden lg:w-12 lg:h-12 lg:cursor-pointer lg:bg-gray-700 lg:rounded-full lg:flex lg:items-center lg:justify-center">
             <MdOutlineHome color="white" className="w-10 h-10" />
           </div>
-          <Label className="flex gap-3 items-center">
+        </div>
+        <Label className="flex gap-3  items-center">
           <FaSearch className="w-7 h-7" color="white" />
             <Input className="text-white" placeholder="Что хочешь включить?" />
             <IoBasketSharp color="white" className="hidden lg:w-8 lg:h-8 lg:cursor-pointer lg:flex " />
           </Label>
-        </div>
         <div className="flex items-center gap-2">
           <Button className="cursor-pointer md:flex lg:flex hidden">Узнать больше о Premium</Button>
           <Button className="hidden lg:cursor-pointer lg:flex">

@@ -16,9 +16,12 @@ const Player = () => {
   return (
     <>
       <div className="flex items-center text-white bg-[#121212] justify-between p-5">
+        <div className="flex gap-1 items-center">
+        <img className="w-15 h-15" src="/free.jpg" alt="" />
         <div className="flex flex-col gap-2">
           <p>Spotify</p>
           <span>Реклама</span>
+        </div>
         </div>
         <div className="flex flex-col gap-2">
           <div className="flex gap-4">

@@ -11,6 +11,8 @@ import { FaSearch } from "react-icons/fa";
 import { FaListUl } from "react-icons/fa";
 import PlayList from "../components/custom/Playlist";
 import { Recently } from "../helpers/Recently";
+import Content from "@/components/custom/Content";
+import PlayingNow from "@/components/custom/PlayingNow";
 // import { FaCirclePlay } from "react-icons/fa6";
 // import {FaBell} from "react-icons/fa"
 // import { IoSettingsOutline } from "react-icons/io5";
@@ -56,21 +58,13 @@ const Home: FC = () => {
             </div>
           </div>
         </ResizablePanel>
-        <ResizableHandle />
+        <ResizableHandle className="bg-black w-1" />
         <ResizablePanel>
-          <div className="flex flex-col">
-            <div className="flex gap-2">
-              <div className="w-25 h-12 rounded-4xl text-white bg-violet-400 cursor-pointer items-center justify-center flex hover:opacity-70  ">
-                <p className="text-lg font-medium">Все</p>
-              </div>
-              <div className="w-25 h-12 rounded-4xl text-white bg-violet-400 cursor-pointer items-center justify-center flex hover:opacity-70  ">
-                <p className="text-lg font-medium">Музыка</p>
-              </div>
-              <div className="w-25 h-12 rounded-4xl text-white bg-violet-400 cursor-pointer items-center justify-center flex hover:opacity-70  ">
-                <p className="text-lg font-medium">Подкасты</p>
-              </div>
-            </div>
-          </div>
+          <Content/>
+        </ResizablePanel>
+        <ResizableHandle className="bg-black w-1" />
+        <ResizablePanel>
+          <PlayingNow/>
         </ResizablePanel>
       </ResizablePanelGroup>
     </div>
