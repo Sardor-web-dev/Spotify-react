@@ -14,7 +14,7 @@ const Auth = () => {
                         <p className="text-2xl font-bold text-center">Millions of Songs. Free on Spotify.</p>
                     </div>
                     <div className="text-white w-full flex flex-col gap-5 items-center">
-                        <Button onClick={() => navigate("/")} className={`${buttonStyles} bg-green-400 text-black hover:text-white hover:bg-green-900`}>
+                        <Button onClick={() => navigate("/home")} className={`${buttonStyles} bg-green-400 text-black hover:text-white hover:bg-green-900`}>
                             Sign up free
                         </Button>
                         <Button className={buttonStyles}>
