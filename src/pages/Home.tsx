@@ -18,7 +18,7 @@ import { Recently } from "../helpers/Recently";
 
 const Home: FC = () => {
   return (
-    <div className="bg-[#121212] text-white h-screen">
+    <div className="bg-[#202020] text-white h-screen">
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel>
           <div className="flex flex-col">
