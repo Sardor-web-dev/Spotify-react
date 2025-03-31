@@ -56,6 +56,7 @@ const Home: FC = () => {
                 <PlayList name={track.name} img={track.img} description={track.description} count={track.count} />
               ) )}
             </div>
+            
           </div>
         </ResizablePanel>
         <ResizableHandle className="bg-black w-1" />
