@@ -1,19 +1,18 @@
-import { BsThreeDots } from "react-icons/bs";
+import { BsFillBackspaceReverseFill, BsThreeDots } from "react-icons/bs";
 import { LuMaximize2 } from "react-icons/lu";
 import { CiSaveUp2 } from "react-icons/ci";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { ResizablePanel, ResizableHandle } from "@/components/ui/resizable";
 import { Button } from "../ui/button";
-import { IoMdClose } from "react-icons/io";
 
-const PlayingNow = () => {
+const RightSidebar = () => {
   return (
     <ResizablePanel 
       defaultSize={20} 
       className="hidden sm:hidden md:hidden lg:block bg-[#121212] text-white w-full h-screen rounded-2xl p-4 flex-col"
     >
       <div className="flex justify-between items-center">
-        <IoMdClose className="cursor-pointer" size={24} />
+        <BsFillBackspaceReverseFill size={24} />
         <h2 className="text-lg font-bold">Название трека</h2>
         <div className="flex gap-3">
           <BsThreeDots size={24} />
@@ -21,12 +20,12 @@ const PlayingNow = () => {
         </div>
       </div>
 
-      <img src="/free.jpg" alt="Трек" className="w-full rounded-lg mt-4" />
+      <img src="/minor.jpg" alt="Трек" className="w-full rounded-lg mt-4" />
 
       <div className="flex justify-between items-center mt-4">
         <div>
-          <h3 className="text-lg font-semibold">Spotify Add</h3>
-          <p className="text-sm text-gray-400">Реклама</p>
+          <h3 className="text-lg font-semibold">Minor</h3>
+          <p className="text-sm text-gray-400">Miyagi & Andy Panda</p>
         </div>
         <div className="flex gap-3">
           <CiSaveUp2 size={24} />
@@ -42,7 +41,7 @@ const PlayingNow = () => {
 
         <div className="flex justify-between items-center mt-4">
             <div>
-            <h3 className="text-lg font-semibold text-white">Spotify</h3>
+            <h3 className="text-lg font-semibold text-white">Miyagi & Andy Panda</h3>
             <p className="text-sm text-gray-400">Основной исполнитель</p>
             </div>
             <Button className="bg-[#222222] text-white border text-sm px-4 py-2 rounded-3xl transition">
@@ -51,9 +50,9 @@ const PlayingNow = () => {
         </div>
 
         <div className="mt-4">
-            <h3 className="text-lg font-semibold text-white">Spotify</h3>
+            <h3 className="text-lg font-semibold text-white">Velocity</h3>
             <p className="text-sm text-gray-400 mt-2">Композитор</p>
-            <h3 className="text-lg font-semibold text-white">Spotify Premium</h3>
+            <h3 className="text-lg font-semibold text-white">MiyaGi</h3>
             <p className="text-sm text-gray-400 mt-2">Автор текстов</p>
         </div>
       </div>
@@ -63,5 +62,5 @@ const PlayingNow = () => {
   );
 };
 
-export default PlayingNow;
+export default RightSidebar;
 
