@@ -43,16 +43,16 @@ const Playlist = () => {
 				</TableHeader>
 				<TableBody>
 					{tracks.map((track: any, index: number) => (
-					<TableRow key={track.track.id}>
+					<TableRow key={track?.id}>
 						<TableCell>{index + 1}</TableCell>
-						<TableCell>{track.track.name}</TableCell>
+						<TableCell>{track?.name}</TableCell>
 						<TableCell>
-						{track.track.artists.map((artist: any) => artist.name).join(", ")}
+						{track.artists.map((artist: any) => artist.name).join(", ")}
 						</TableCell>
-						<TableCell>{track.track.album.name}</TableCell>
+						<TableCell>{track?.album.name}</TableCell>
 						<TableCell>
-						{Math.floor(track.track.duration_ms / 60000)}:
-						{(track.track.duration_ms % 60000 / 1000).toFixed(0).padStart(2, "0")}
+						{Math.floor(track?.duration_ms / 60000)}:
+						{(track?.duration_ms % 60000 / 1000).toFixed(0).padStart(2, "0")}
 						</TableCell>
 					</TableRow>
 					))}
